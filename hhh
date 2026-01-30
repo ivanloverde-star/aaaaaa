@@ -706,7 +706,7 @@ class QuizViewWindow:
         # Vincitori o nessun vincitore
         if risposte:
             winner_title_size = int(self.quiz_font_size*0.8)
-            tk.Label(self.container, text="ðŸ† VINCITORI ðŸ†", font=('Arial', winner_title_size, 'bold'), 
+            tk.Label(self.container, text="🏆 VINCITORI 🏆", font=('Arial', winner_title_size, 'bold'), 
                     bg='#fa8c16', fg='white').pack(pady=(int(self.quiz_font_size*0.4), int(self.quiz_font_size*0.2)))
             winners_frame = tk.Frame(self.container, bg='#fa8c16')
             winners_frame.pack(fill=tk.BOTH, expand=True, pady=int(self.quiz_font_size*0.2))
@@ -1098,7 +1098,7 @@ class FinestraClassifica(tk.Toplevel):
     
     def __init__(self, logs_ordinati, controller):
         super().__init__()
-        self.title("ðŸ† CLASSIFICA FINALE")
+        self.title("🏆 CLASSIFICA FINALE")
         self.geometry("950x750")
         self.configure(bg="#000000")
         
@@ -1108,7 +1108,7 @@ class FinestraClassifica(tk.Toplevel):
         
         tk.Label(
             self,
-            text="ðŸ† CLASSIFICA FINALE ðŸ†",
+            text="🏆 CLASSIFICA FINALE 🏆",
             font=("Helvetica", 42, "bold"),
             bg="#000000",
             fg="#00ffff"
@@ -1513,7 +1513,7 @@ class FinestraControlloApplausometro:
         
         tk.Button(
             btn_frame2,
-            text="ðŸ† CLASSIFICA",
+            text="🏆 CLASSIFICA",
             command=self.mostra_classifica,
             font=("Arial", 9, "bold"),
             bg="#9b59b6",
@@ -2474,7 +2474,7 @@ class ControlPanel:
     
     def delete_all_data(self):
         result = messagebox.askyesno("Conferma Eliminazione", 
-            "âš ï¸ ATTENZIONE!\n\nQuesto cancellerÃ  TUTTI i dati:\n\nâ€¢ Tutti i messaggi\nâ€¢ Tutte le prenotazioni karaoke\nâ€¢ Tutti i risultati quiz\n\nQuesta operazione Ã¨ IRREVERSIBILE!\n\nSei sicuro?",
+            "âš ï¸ ATTENZIONE!\n\nQuesto cancellerÃ  TUTTI i dati:\n\n• Tutti i messaggi\n• Tutte le prenotazioni karaoke\n• Tutti i risultati quiz\n\nQuesta operazione Ã¨ IRREVERSIBILE!\n\nSei sicuro?",
             icon='warning')
         if result:
             try:
